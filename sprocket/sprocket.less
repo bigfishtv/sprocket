@@ -1,0 +1,97 @@
+/*!
+ * Sprocket v1.0 (http://sprocket.bigfish.tv)
+ * Copyright 2014 Bigfish
+ * Licensed under MIT
+ */
+
+
+//Definitions
+@animation-fast: 0.5s;
+@animation-medium: 1s;
+@animation-slow: 2s;
+
+//Mixins
+.animation(@animation) {
+	-webkit-animation: @animation;
+	animation: @animation;
+}
+
+.animation-name(@name) {
+	-webkit-animation-name: @name;
+	animation-name: @name;
+}
+
+.animation-duration(@duration) {
+	-webkit-animation-duration: @duration;
+	animation-duration: @duration;
+}
+
+.animation-fill-mode(@mode) {
+	-webkit-animation-fill-mode: @mode;
+	animation-fill-mode: @mode;
+}
+
+.animation-timing-function(@timing-function) {
+	-webkit-animation-timing-function: @timing-function;
+	animation-timing-function: @timing-function;
+}
+
+.animation-delay(@delay) {
+	-webkit-animation-delay: @delay;
+	animation-delay: @delay;
+}
+
+.animation-iteration-count(@iteration-count) {
+	-webkit-animation-iteration-count: @iteration-count;
+	animation-iteration-count: @iteration-count;
+}
+
+.animation-direction(@direction) {
+	-webkit-animation-direction: @direction;
+	animation-direction: @direction;
+}
+
+//Utility Classes
+.animate {
+	.animation-duration(@animation-medium);
+	.animation-timing-function(linear);
+	.animation-fill-mode(both);
+}
+
+.animate-fast {
+	.animation-duration(@animation-fast);
+	.animation-timing-function(linear);
+	.animation-fill-mode(both);
+}
+
+.animate-slow {
+	.animation-duration(@animation-slow);
+	.animation-timing-function(linear);
+	.animation-fill-mode(both);
+}
+
+.animate-repeat {
+	.animation-iteration-count(infinite);
+}
+
+//Animations
+@import 'animations/bounce.less';
+@import 'animations/fade-in-down.less';
+@import 'animations/fade-in-up.less';
+@import 'animations/fade-in.less';
+@import 'animations/fade-out.less';
+@import 'animations/flame.less';
+@import 'animations/grow-up.less';
+@import 'animations/half-spin.less';
+@import 'animations/pop-in.less';
+@import 'animations/pop-out.less';
+@import 'animations/pop.less';
+@import 'animations/indicator.less';
+@import 'animations/move-down.less';
+@import 'animations/move-up.less';
+@import 'animations/orbit.less';
+@import 'animations/pulse.less';
+@import 'animations/ripple.less';
+@import 'animations/spin.less';
+@import 'animations/swing.less';
+@import 'animations/wiggle.less';

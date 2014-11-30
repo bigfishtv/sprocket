@@ -1,0 +1,21 @@
+@-webkit-keyframes move-up {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(-20px);
+	}
+}
+
+@keyframes move-up {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+.move-up {
+	.animation-name(move-up);
+}

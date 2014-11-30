@@ -1,0 +1,57 @@
+@-webkit-keyframes flame {
+	0, 30%, 40%, 50%, 60%, 70%, 100% {
+		-webkit-transform-origin: bottom center;
+	}
+	0% {
+		-webkit-transform: scaleY(1) skewX(0);
+	}
+	30% {
+		-webkit-transform: scaleY(1.05) skewX(-2deg);
+	}
+	40% {
+		-webkit-transform: scaleY(1.08) skewX(2deg);
+	}
+	50% {
+		-webkit-transform: scaleY(1.1) skewX(0);
+	}
+	60% {
+		-webkit-transform: scaleY(1.08) skewX(-2deg);
+	}
+	70% {
+		-webkit-transform: scaleY(1.05) skewX(2deg);
+	}
+	100% {
+		-webkit-transform: scaleY(1) skewX(0);
+	}
+}
+
+@keyframes flame {
+	0, 30%, 40%, 50%, 60%, 70%, 100% {
+		transform-origin: bottom center;
+	}
+	0% {
+		transform: scaleY(1) skewX(0);
+	}
+	30% {
+		transform: scaleY(1.05) skewX(-2deg);
+	}
+	40% {
+		transform: scaleY(1.08) skewX(2deg);
+	}
+	50% {
+		transform: scaleY(1.1) skewX(0);
+	}
+	60% {
+		transform: scaleY(1.08) skewX(-2deg);
+	}
+	70% {
+		transform: scaleY(1.05) skewX(2deg);
+	}
+	100% {
+		transform: scaleY(1) skewX(0);
+	}
+}
+
+.flame {
+	.animation-name(flame);
+}
