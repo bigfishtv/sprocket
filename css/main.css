@@ -1452,7 +1452,7 @@ body {
 }
 @media (max-width: 767px) {
   .column {
-    padding-top: 50%;
+    padding-top: 75%;
     width: 50%;
   }
 }
