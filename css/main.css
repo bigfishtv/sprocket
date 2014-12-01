@@ -1347,13 +1347,13 @@ button:disabled,
 }
 .button-border:hover,
 .button-border:focus {
-  color: #612175;
-  border: 2px solid #612175;
-  background: transparent;
+  color: #f74d82;
+  border: 2px solid #3c2a4f;
+  background: #3c2a4f;
 }
 .button-border:hover:after,
 .button-border:focus:after {
-  color: #612175;
+  color: #f74d82;
 }
 /*
  * Button Modifiers
