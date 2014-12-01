@@ -7,10 +7,14 @@
 
 //Definitions
 @animation-fast: 0.5s;
-@animation-medium: 2s;
+@animation-medium: 1s;
 @animation-slow: 2s;
 
-//Mixins
+
+/*
+ * Mixins
+ */
+
 .animation(@animation) {
 	-webkit-animation: @animation;
 	animation: @animation;
@@ -51,7 +55,11 @@
 	animation-direction: @direction;
 }
 
-//Utility Classes
+
+/*
+ * Utility Classes
+ */
+
 .animate {
 	.animation-duration(@animation-medium);
 	.animation-timing-function(linear);
@@ -70,18 +78,24 @@
 	.animation-fill-mode(both);
 }
 
+.animate-alternate {
+	.animation-direction(alternate);
+}
+
 .animate-repeat {
 	.animation-iteration-count(infinite);
 }
 
-//Animations
+
+/*
+ * Animations
+ */
+
 @import 'animations/bounce.less';
 @import 'animations/fade-in-down.less';
 @import 'animations/fade-in-up.less';
 @import 'animations/fade-in.less';
 @import 'animations/fade-out.less';
-@import 'animations/flame.less';
-@import 'animations/grow-up.less';
 @import 'animations/half-spin.less';
 @import 'animations/pop-in.less';
 @import 'animations/pop-out.less';
