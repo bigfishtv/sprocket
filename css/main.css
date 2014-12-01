@@ -1419,9 +1419,15 @@ body {
   position: relative;
   float: left;
   padding: 0px 10px;
-  padding-top: 16.6666666667%;
-  width: 16.6666666667%;
+  padding-top: 20%;
+  width: 20%;
   text-align: center;
+}
+@media (min-width: 1280px) {
+  .column {
+    padding-top: 16.6666666667%;
+    width: 16.6666666667%;
+  }
 }
 @media (max-width:  1024px) {
   .column {

@@ -46,9 +46,14 @@ body {
 	position: relative;
 	float: left;
 	padding: 0px 10px;
-	padding-top: @column-1-6;
-	width: @column-1-6;
+	padding-top: @column-1-5;
+	width: @column-1-5;
 	text-align: center;
+	
+	@media @extra-large {
+		padding-top: @column-1-6;
+		width: @column-1-6;
+	}
 	
 	@media @medium {
 		padding-top: @column-1-4;
