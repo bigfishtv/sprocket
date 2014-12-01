@@ -490,26 +490,18 @@
 /* Orbit */
 @-webkit-keyframes orbit {
   from {
-    -webkit-transform: rotate(0deg) translate(-25em) rotate(270deg);
+    -webkit-transform: rotate(0deg) translate(-10em) rotate(270deg);
   }
   to {
-    -webkit-transform: rotate(360deg) translate(-25em) rotate(270deg);
-  }
-}
-@-moz-keyframes orbit {
-  from {
-    -moz-transform: rotate(0deg) translate(-25em) rotate(270deg);
-  }
-  to {
-    -moz-transform: rotate(360deg) translate(-25em) rotate(270deg);
+    -webkit-transform: rotate(360deg) translate(-10em) rotate(270deg);
   }
 }
 @keyframes orbit {
   from {
-    transform: rotate(0deg) translate(-25em) rotate(270deg);
+    transform: rotate(0deg) translate(-10em) rotate(270deg);
   }
   to {
-    transform: rotate(360deg) translate(-25em) rotate(270deg);
+    transform: rotate(360deg) translate(-10em) rotate(270deg);
   }
 }
 .orbit {
@@ -525,7 +517,7 @@
     box-shadow: 0 0 0 4px rgba(255, 223, 79, 0.25);
   }
   100% {
-    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.1);
+    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.09999999999999998);
   }
 }
 @-moz-keyframes pulse {
@@ -536,7 +528,7 @@
     box-shadow: 0 0 0 4px rgba(255, 223, 79, 0.25);
   }
   100% {
-    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.1);
+    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.09999999999999998);
   }
 }
 @keyframes pulse {
@@ -547,7 +539,7 @@
     box-shadow: 0 0 0 4px rgba(255, 223, 79, 0.25);
   }
   100% {
-    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.1);
+    box-shadow: 0 0 0 25px rgba(255, 223, 79, 0.09999999999999998);
   }
 }
 .pulse {
