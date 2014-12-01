@@ -1222,7 +1222,6 @@ button,
   font-size: 14px;
   font-size: 1.4rem;
   border: none;
-  line-height: 1;
   color: #ffffff;
   text-align: center;
   text-transform: none;
@@ -1246,6 +1245,10 @@ button .icon,
   font-size: 14px;
   font-size: 1.4rem;
   vertical-align: middle;
+}
+button:visited,
+.button:visited {
+  color: #ffffff;
 }
 button:hover,
 .button:hover,
@@ -1296,6 +1299,9 @@ button:disabled,
 .button-inverse:after {
   color: #6b7681;
 }
+.button-inverse:visited {
+  color: #6b7681;
+}
 .button-inverse:hover,
 .button-inverse:focus {
   color: #6b7681;
@@ -1313,6 +1319,9 @@ button:disabled,
 .button-text:after {
   color: #3c2a4f;
 }
+.button-text:visited {
+  color: #3c2a4f;
+}
 .button-text:hover,
 .button-text:focus {
   color: #f74d82;
@@ -1326,6 +1335,9 @@ button:disabled,
   background: #f74d82;
 }
 .button-primary:after {
+  color: #ffffff;
+}
+.button-primary:visited {
   color: #ffffff;
 }
 .button-primary:hover,
@@ -1343,6 +1355,9 @@ button:disabled,
   border: 2px solid #3c2a4f;
 }
 .button-border:after {
+  color: #3c2a4f;
+}
+.button-border:visited {
   color: #3c2a4f;
 }
 .button-border:hover,
